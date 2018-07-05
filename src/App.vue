@@ -7,8 +7,15 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue';
-import Footer from './components/Footer.vue';
+import Vue from 'vue'
+import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
+
 
 export default {
   name: 'app',

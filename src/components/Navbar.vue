@@ -22,7 +22,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .navbar-top {
-  background: #EE2524;
+  background: #0e578c;
   width: 100vw;
   height: 65px;
   position: fixed;
@@ -33,7 +33,16 @@ export default {
   padding: 10px;
   filter: brightness(0) invert(1);
   margin-left: 5%;
+  transition: all 1s;
 }
+.logo:hover {
+  width: 110px;
+  padding: 10px;
+  margin-left: 5%;
+  transition: all 1s;
+  filter: brightness(1) invert(0);
+}
+
 .super-menu {
   display: inline-block;
   float: right;
@@ -42,7 +51,7 @@ export default {
   display: inline-block;
   width: 150px;
   text-align: center;
-  background: #EE2524;
+  background: #0e578c;
   line-height: 45px;
   color:#fff;
   padding: 10px;
