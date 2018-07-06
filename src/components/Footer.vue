@@ -51,7 +51,7 @@ export default {
   display: block;
   position: relative;
   color: #fff;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .row {
@@ -85,6 +85,12 @@ export default {
 
 .custom-file-label {
   overflow: hidden;
+}
+
+@media screen and (max-height: 736px) and (max-width: 450px) {
+  .footer {
+    font-size: 10px;
+  }
 }
 
 </style>
