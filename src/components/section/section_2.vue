@@ -3,14 +3,41 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-5 col-offset-1 col-12">
-          <div class="profile">
-            <img src="../../assets/ICON/01.png" alt="" />
+          <div class="profile-card">
+            <img src="../../assets/ICON/05.png" alt="" />
+            <div>ประหยัดเวลา และลดต้นทุนเอกสารในการทำธุรกรรม</div>
+          </div>
+        </div>
+        <div class="col-md-5 col-offset-1 col-12">
+          <div class="profile-card">
+            <img src="../../assets/ICON/12.png" alt="" />
+            <div>ตรวจสอบข้อมูลและความน่าเชื่อถือของเอกสารได้ทันที</div>
           </div>
         </div>
       </div>
-      <div class="col-md-5 col-offset-1 col-12">
-        <div class="profile">hello</div>
+       <div class="row justify-content-center">
+        <div class="col-md-5 col-offset-1 col-12">
+          <div class="profile-card">
+            <img src="../../assets/ICON/09.png" alt="" />
+            <div>สามารถตรวจสอบ และพิสูจน์เจ้าของลายมือชื่อได้</div>
+          </div>
+        </div>
+        <div class="col-md-5 col-offset-1 col-12">
+          <div class="profile-card">
+            <img src="../../assets/ICON/10.png" alt="" />
+            <div>มีความน่าเชื่อถือ สอดคล้องตาม พรบ.ธุรกรรมทางอิเล็กทรอนิกส์ พ.ศ.2544 มาตรา 9 และ 26</div>
+          </div>
+        </div>
       </div>
+       <div class="row justify-content-center">
+        <div class="col-md-5 col-offset-1 col-12">
+          <div class="profile-card">
+            <img src="../../assets/ICON/07.png" alt="" />
+            <div>ให้บริการบนมาตรฐาน ISO 20000 และ ISO 27001</div>
+          </div>
+        </div>
+      </div>
+  
     </div>
   </div>
 </template>
@@ -30,23 +57,7 @@
 <style scoped>
   .section {
     width: 100%;
-    height: 50vh;
     box-sizing: border-box;
-  }
-  
-  .card-login {
-    width: 400px;
-    height: 300px;
-    text-align: center;
-    box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);
-    border-radius: 30px 30px 30px 30px;
-    -moz-border-radius: 30px 30px 30px 30px;
-    -webkit-border-radius: 30px 30px 30px 30px;
-    border: 0px solid #000000;
-    padding: 4%;
-    display: block;
-    margin-top: 30px;
-    background: #fff;
   }
   
   .img-card {
@@ -58,8 +69,16 @@
     font-size: 2em;
   }
   
-  .profile {
+  .profile-card {
     text-align: center;
   }
-
+  
+  .profile-card>img {
+    width: 128px;
+  }
+  
+  .profile-card div {
+    font-size: 1.5em;
+    margin: 40px;
+  }
 </style>

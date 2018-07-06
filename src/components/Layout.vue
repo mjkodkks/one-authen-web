@@ -1,31 +1,34 @@
 <template>
-    <div>
-        <div class="logo">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="title-head">
-                Digital Signing</div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="title-head-second">แพลตฟอร์มลงลายมือชื่ออิเล็กทรอนิกส์ที่น่าเชื่อถือ</div>
-              </div>
+  <div>
+    <div class="logo">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="title-head">
+            Digital Signing</div>
         </div>
+        <div class="row justify-content-center">
+          <div class="title-head-second">แพลตฟอร์มลงลายมือชื่ออิเล็กทรอนิกส์ที่น่าเชื่อถือ</div>
         </div>
-        <section_1></section_1>
-        <section_2></section_2>
+      </div>
     </div>
+    <section_1></section_1>
+    <section_2></section_2>
+    <section_3></section_3>
+  </div>
 </template>
 
 <script>
 import section_1 from "./section/section_1";
 import section_2 from "./section/section_2";
+import section_3 from "./section/section_3";
 import Parallax from "vue-parallaxy";
 
 export default {
   name: "Layout",
   components: {
     section_1,
-    section_2
+    section_2,
+    section_3
   }
 };
 </script>
@@ -38,17 +41,18 @@ export default {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
-  height: 400px;
 }
+
 .title-head {
   font-size: 4em;
   color: #fff;
   padding-top: 100px;
 }
+
 .title-head-second {
   font-size: 2em;
   color: #fff;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 </style>

@@ -41,7 +41,7 @@ export default {
   border: 0px solid #000000;
   padding: 4%;
   display: block;
-  margin-top: 30px;
+  margin-top: 50px;
   background: #fff;
 }
 .img-card {

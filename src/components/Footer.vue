@@ -50,7 +50,6 @@ export default {
   background: #d60103;
   display: block;
   position: relative;
-  bottom: 0;
   color: #fff;
   font-size: 13px;
 }
