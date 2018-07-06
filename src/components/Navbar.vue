@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div id="section-1">
     <div class="navbar-top" v-scroll="handleScrollnavbar">
       <div class="container-fluid">
-        <img src="../assets/logo_OneAuthen_500px.png" class="logo" alt="" v-scroll="handleScrolllogo" />
+        <img src="../assets/logo_OneAuthen_500px.png" class="logo" alt="" v-scroll="handleScrolllogo" v-scroll-to="'#section-1'" />
         <ul class="super-menu" v-scroll="handleScrollsupermenu">
-          <a href="#"><li>หน้าหลัก</li></a>
-          <a href="#"><li>โซลูชั่น</li></a>
-          <a href="#"><li>ติดต่อเรา</li></a>
+          <a href="#" v-scroll-to="'#section-1'"><li>หน้าหลัก</li></a>
+          <a href="#" v-scroll-to="'#section-2'"><li>โซลูชั่น</li></a>
+          <a href="#" v-scroll-to="'#section-3'"><li>ติดต่อเรา</li></a>
         </ul>
       </div>
     </div>

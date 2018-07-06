@@ -14,6 +14,7 @@
     "vue-parallaxy": "^1.1.1",
     "vue-particles": "^1.0.9",
     "vue-router": "^3.0.1",
+    "vue-scrollto": "^2.11.0",
     "vuex": "^3.0.1",
     "wow.js": "^1.2.2"
   },

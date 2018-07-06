@@ -12,9 +12,9 @@
       </div>
       <vue-particles class="particle-top" color="#BB1F20"></vue-particles>
     </div>
-    <section_1></section_1>
+    <section_1 id="section-2"></section_1>
     <section_2></section_2>
-    <section_3></section_3>
+    <section_3 id="section-3"></section_3>
   </div>
 </template>
 
@@ -23,7 +23,6 @@ import Vue from "vue"
 import section_1 from "./section/section_1";
 import section_2 from "./section/section_2";
 import section_3 from "./section/section_3";
-import Parallax from "vue-parallaxy";
 import VueParticles from 'vue-particles';
 
 Vue.use(VueParticles)

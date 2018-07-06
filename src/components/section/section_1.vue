@@ -40,6 +40,7 @@ export default {
   margin-top: 100px;
   background: #fff;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .card-login:hover .img-card{
 filter: brightness(0) invert(1);
