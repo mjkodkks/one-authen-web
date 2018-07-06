@@ -1,6 +1,6 @@
 <template> 
   <div class="section">
-     <parallax> 
+     
     <div class="container">
       <div class="row justify-content-center">
         <div class="card-login"><img src="../../assets/logo_OneAuthen_500px.png" class="img-card" alt="fail">
@@ -8,17 +8,14 @@
         </div>
       </div>
     </div>
-    </parallax>
+    
   </div>
 </template>
 
 <script>
-import Parallax from 'vue-parallaxy'
-
 export default {
   name: "section_1",
   components: {
-    Parallax
   }
 };
 </script>
@@ -43,12 +40,30 @@ export default {
   display: block;
   margin-top: 50px;
   background: #fff;
+  transition: all 0.5s;
 }
+.card-login:hover .img-card{
+filter: brightness(0) invert(1);
+}
+
+.card-login:hover .card-text{
+  color:#fff;
+  font-size: 3em;
+  transition: all 1s;
+}
+
+.card-login:hover{
+background: #EE2524;
+transition: all 0.5s;
+-webkit-transform: scale(1.04, 1.04);
+}
+
 .img-card {
   width: 100%;
 }
 .card-text {
   margin-top: 10px;
   font-size: 2em;
+  transition: all 1s;
 }
 </style>
