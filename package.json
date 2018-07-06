@@ -12,8 +12,10 @@
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
     "vue-parallaxy": "^1.1.1",
+    "vue-particles": "^1.0.9",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",

@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="last-img">
-      <div class="contact-card">
+      <div class="contact-card wow slideInLeft">
         <div class="contact-head">ติดต่อเรา</div>
         <div class="container">
           <b-form @submit="onSubmit">
@@ -38,6 +38,7 @@
 
 <script>
 import Parallax from "vue-parallaxy";
+import WOW from "wow.js";
 
 export default {
   name: "section_3",

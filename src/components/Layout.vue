@@ -10,6 +10,7 @@
           <div class="title-head-second">แพลตฟอร์มลงลายมือชื่ออิเล็กทรอนิกส์ที่น่าเชื่อถือ</div>
         </div>
       </div>
+      <vue-particles class="particle-top" color="#BB1F20"></vue-particles>
     </div>
     <section_1></section_1>
     <section_2></section_2>
@@ -18,10 +19,14 @@
 </template>
 
 <script>
+import Vue from "vue"
 import section_1 from "./section/section_1";
 import section_2 from "./section/section_2";
 import section_3 from "./section/section_3";
 import Parallax from "vue-parallaxy";
+import VueParticles from 'vue-particles';
+
+Vue.use(VueParticles)
 
 export default {
   name: "Layout",
@@ -54,5 +59,21 @@ export default {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 50px;
+}
+
+.particle-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 313px;
+}
+
+.particle-bottom {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 313px;
 }
 </style>

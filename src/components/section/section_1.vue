@@ -1,14 +1,13 @@
 <template> 
   <div class="section">
-     
     <div class="container">
       <div class="row justify-content-center">
         <div class="card-login"><img src="../../assets/logo_OneAuthen_500px.png" class="img-card" alt="fail">
         <div class="card-text" >ทดลองใช้งาน</div>
         </div>
       </div>
+      <div class="row justify-content-center"><div class="underline"></div></div>
     </div>
-    
   </div>
 </template>
 
@@ -38,7 +37,7 @@ export default {
   border: 0px solid #000000;
   padding: 4%;
   display: block;
-  margin-top: 50px;
+  margin-top: 100px;
   background: #fff;
   transition: all 0.5s;
 }
@@ -49,7 +48,7 @@ filter: brightness(0) invert(1);
 .card-login:hover .card-text{
   color:#fff;
   font-size: 3em;
-  transition: all 1s;
+  transition: all 0.8s;
 }
 
 .card-login:hover{
@@ -64,6 +63,13 @@ transition: all 0.5s;
 .card-text {
   margin-top: 10px;
   font-size: 2em;
-  transition: all 1s;
+  transition: all 0.8s;
 }
+.underline {
+  border-bottom: solid red 5px;
+  width: 100px;
+  padding: 20px 0 20px 0;
+  border-radius: 0px 0px 5px 5px;
+}
+
 </style>
