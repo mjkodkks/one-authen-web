@@ -2,7 +2,7 @@
   <div>
     <div class="navbar-top">
       <div class="container-fluid">
-        <img src="../assets/logo_OneAuthen_500px.png" class="logo" />
+        <img src="../assets/logo_OneAuthen_500px.png" class="logo" alt="" />
         <ul class="super-menu">
           <a href="#"><li>หน้าหลัก</li></a>
           <a href="#"><li>โซลูชั่น</li></a>
@@ -22,11 +22,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .navbar-top {
-  background: #0e578c;
+  
   width: 100vw;
   height: 65px;
   position: fixed;
-  box-shadow: 0 0 1px rgba(0,0,0,0.25);
+  z-index: 2000;
 }
 .logo {
   width: 110px;
@@ -51,7 +51,6 @@ export default {
   display: inline-block;
   width: 150px;
   text-align: center;
-  background: #0e578c;
   line-height: 45px;
   color:#fff;
   padding: 10px;
@@ -62,7 +61,6 @@ export default {
   display: inline-block;
   width: 110px;
   text-align: center;
-  background: #ffff;
   line-height: 45px;
   color:#EE2524;
   padding-bottom: 5px;
@@ -77,4 +75,5 @@ ul {
   margin: 0;
   list-style: none;
 }
+
 </style>
