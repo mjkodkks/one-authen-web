@@ -57,7 +57,12 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
-      alert(JSON.stringify(this.form));
+      var myform = "คุณ " + this.name_user + "เบอร์ติดต่อ " + this.telephone_user 
+      //alert(JSON.stringify(this.form));
+      var mail = document.createElement("a");
+      mail.href = "mailto:info@oneauthen.in.th?subject=ติดต่อ OneAuthen"+"&body=" + encodeURIComponent(myform);
+
+      mail.click();
     }
   }
 };

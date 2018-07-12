@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.0-rc.11",
+    "hamburgers": "^0.9.3",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
     "vue-parallaxy": "^1.1.1",
