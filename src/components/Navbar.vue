@@ -3,6 +3,7 @@
     <div class="navbar-top" v-scroll="handleScrollnavbar">
       <div class="container-fluid">
         <img src="../assets/logo_OneAuthen_500px.png" class="logo" alt="" v-scroll="handleScrolllogo" v-scroll-to="'#section-1'" />
+          
         <ul v-if="!ifmobile" class="super-menu" v-scroll="handleScrollsupermenu">
           <a href="#" v-scroll-to="'#section-1'">
             <li>หน้าหลัก</li>
@@ -15,16 +16,17 @@
           </a>
         </ul>
         <ul v-else-if="clicked === true" class="super-menu-mobile" v-scroll="handleScrollsupermenu">
-          <a href="#" v-scroll-to="'#section-1'">
+          <a class="animated fadeIn" href="#" v-scroll-to="'#section-1'">
             <li>หน้าหลัก</li>
           </a>
-          <a href="#" v-scroll-to="'#section-2'">
+          <a class="animated fadeIn" href="#" v-scroll-to="'#section-2'">
             <li>โซลูชั่น</li>
           </a>
-          <a href="#" v-scroll-to="'#section-3'">
+          <a class="animated fadeIn" href="#" v-scroll-to="'#section-3'">
             <li>ติดต่อเรา</li>
           </a>
         </ul>
+        
         <div v-scroll="handleHamberger" class="burger-position">
           <button v-if="ifmobile" v-bind:class="[ this.clicked ? hambergerActive : hambergerDefault]" @click="collapseBurger()" type="button">
             <span class="hamburger-box">
@@ -76,11 +78,11 @@
     methods: {
       handleScrollnavbar: function(evt, el) {
         if (window.scrollY > 50 && !this.clicked) {
-          console.log(this.clicked);
+          //console.log(this.clicked);
           el.setAttribute("class", "navbar-top-scroll")
         } else el.setAttribute("class", "navbar-top")
 
-        if(window.scrollY <= 0 && this.clicked) {
+        if(window.scrollY <= 50 && this.clicked) {
           this.collapseBurger()
         }
 
@@ -250,6 +252,7 @@
       position: absolute;
       top: 10px;
       right: 5px;
+      transition: all 0.5s;
     }
     .super-menu-mobile {
       background: #d60103;

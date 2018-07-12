@@ -173,5 +173,8 @@ export default {
   .send-btn {
     margin-top: 2px !important;
   }
+  .head {
+    font-size: 1.5em !important;
+  }
 }
 </style>

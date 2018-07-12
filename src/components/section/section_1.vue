@@ -76,7 +76,7 @@ transition: all 0.5s;
   .card-login {
     width: 240px;
     height: 100%;
-    margin: 45px;
+    margin: 39px 0 0 0;
   }
   .section[data-v-63900940] {
     height: 200px;
