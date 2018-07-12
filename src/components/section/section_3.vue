@@ -57,10 +57,14 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
-      var myform = "คุณ " + this.name_user + "เบอร์ติดต่อ " + this.telephone_user 
+      var myform =
+        "คุณ " + this.name_user + "เบอร์ติดต่อ " + this.telephone_user;
       //alert(JSON.stringify(this.form));
       var mail = document.createElement("a");
-      mail.href = "mailto:info@oneauthen.in.th?subject=ติดต่อ OneAuthen"+"&body=" + encodeURIComponent(myform);
+      mail.href =
+        "mailto:info@oneauthen.in.th?subject=ติดต่อ OneAuthen" +
+        "&body=" +
+        encodeURIComponent(myform);
 
       mail.click();
     }
@@ -116,8 +120,6 @@ export default {
   position: relative;
 }
 
-
-
 .send-btn:before {
   content: url("../../assets/ICON/bxs-right-arrow.svg");
   position: absolute;
@@ -162,5 +164,14 @@ export default {
 ::-webkit-input-placeholder {
   color: #fff;
   opacity: 1; /* Firefox */
+}
+
+@media screen and (max-width: 500px) {
+  .float-right {
+    float: left !important;
+  }
+  .send-btn {
+    margin-top: 2px !important;
+  }
 }
 </style>

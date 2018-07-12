@@ -72,5 +72,14 @@ transition: all 0.5s;
   padding: 20px 0 20px 0;
   border-radius: 0px 0px 5px 5px;
 }
-
+@media screen and (max-width: 500px) {
+  .card-login {
+    width: 240px;
+    height: 100%;
+    margin: 45px;
+  }
+  .section[data-v-63900940] {
+    height: 200px;
+}
+}
 </style>

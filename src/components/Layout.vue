@@ -75,4 +75,35 @@ export default {
   bottom: 0;
   height: 313px;
 }
+
+@media screen and (max-width: 500px) {
+  .logo {
+  background: url("../assets/Image_42e317c.jpg");
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+  .title-head {
+  font-size: 3em;
+  color: #fff;
+  padding-top: 40vh;
+}
+
+.title-head-second {
+  font-size: 1em;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.particle-top {
+  position: absolute;
+  top: 0;
+  right: -20;
+  left: 0;
+  height: 100vh;
+}
+}
 </style>

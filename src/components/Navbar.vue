@@ -25,7 +25,7 @@
             <li>ติดต่อเรา</li>
           </a>
         </ul>
-        <div class="burger-positon">
+        <div v-scroll="handleHamberger" class="burger-position">
           <button v-if="ifmobile" v-bind:class="[ this.clicked ? hambergerActive : hambergerDefault]" @click="collapseBurger()" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
@@ -77,18 +77,28 @@
       handleScrollnavbar: function(evt, el) {
         if (window.scrollY > 50 && !this.clicked) {
           console.log(this.clicked);
-          el.setAttribute("class", "navbar-top-scroll");
-        } else el.setAttribute("class", "navbar-top");
+          el.setAttribute("class", "navbar-top-scroll")
+        } else el.setAttribute("class", "navbar-top")
+
+        if(window.scrollY <= 0 && this.clicked) {
+          this.collapseBurger()
+        }
+
       },
       handleScrolllogo: function(evt, el) {
         if (window.scrollY > 50) {
-          el.setAttribute("class", "logo-scroll");
-        } else el.setAttribute("class", "logo");
+          el.setAttribute("class", "logo-scroll")
+        } else el.setAttribute("class", "logo")
       },
       handleScrollsupermenu: function(evt, el) {
         if (window.scrollY > 50) {
-          el.setAttribute("class", "super-menu-scroll");
-        } else el.setAttribute("class", "super-menu");
+          el.setAttribute("class", "super-menu-scroll")
+        } else el.setAttribute("class", "super-menu")
+      },
+      handleHamberger: function(evt, el) {
+        if (window.scrollY > 50) {
+          el.setAttribute("class", "burger-position-mobile")
+        } else el.setAttribute("class", "burger-position")
       },
       handleResize() {
         this.window.width = window.innerWidth;
@@ -224,6 +234,8 @@
     }
     .navbar-top {
       background: #fff;
+      box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);
+      height: 75px;
     }
     .super-menu>a>li {
       width: 100%;
@@ -233,10 +245,10 @@
       width: 100%;
       transition: none;
     }
-    .burger-positon {
+    .burger-position {
       display: block;
       position: absolute;
-      top: 5px;
+      top: 10px;
       right: 5px;
     }
     .super-menu-mobile {
@@ -244,7 +256,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      top: 64px;
+      top: 65px;
     }
     .super-menu-mobile>a>li {
       display: inline-block;
@@ -306,6 +318,16 @@
     }
     .logo {
       filter: brightness(1) invert(0);
+    }
+    .burger-position-mobile {
+      top: 5px;
+      display: block;
+      position: absolute;
+      right: 5px;
+      transition: all 0.5s;
+    }
+    ul {
+      border-bottom: #fefefe solid;
     }
   }
 </style>
