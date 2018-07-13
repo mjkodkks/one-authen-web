@@ -8,8 +8,12 @@
           <a href="#" v-scroll-to="'#section-1'">
             <li>หน้าหลัก</li>
           </a>
-          <a href="#" v-scroll-to="'#section-2'">
+          <a href="#" v-scroll-to="'#section-2'" class="sub-menu">
             <li>โซลูชั่น</li>
+            <div class="animated fadeIn content-list">
+                <a href="">certification</a>
+                <a href="">digital signing</a>
+              </div>            
           </a>
           <a href="#" v-scroll-to="'#section-3'">
             <li>ติดต่อเรา</li>
@@ -120,6 +124,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  a {
+    display: inline-block;
+  }
     .navbar-top {
     width: 100vw;
     height: 65px;
@@ -180,7 +187,7 @@
   
   .super-menu>a>li:hover {
     display: inline-block;
-    width: 110px;
+    width: 150px;
     text-align: center;
     line-height: 45px;
     color: #ee2524;
@@ -189,6 +196,7 @@
     border-bottom: solid 5px #ee2524;
     border-left: solid 2px #ee2524;
     border-right: solid 2px #ee2524;
+    background: rgb(0,0,0,0.24);
   }
   
   .super-menu-scroll {
@@ -212,7 +220,7 @@
     text-align: center;
     line-height: 45px;
     color: #ee2524;
-    padding: 10px;
+    padding: 5px;
     transition: all 0.5s;
     border-bottom: solid 5px #ee2524;
     border-left: solid 2px #ee2524;
@@ -223,6 +231,66 @@
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+
+  .content-list {
+    display: none;
+    position: absolute;
+    top: 62px;
+    right: 167px;
+    min-width: 148px;
+    height: calc(100%-100px);
+    border: solid 2px #fefefe;
+    background: #ffff;
+    transition: all 0.5s;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 45px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+  }
+
+.content-list::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -6px;
+    right: 7px;
+    transform: rotate(45deg);
+    background: #fff;
+    
+  }
+
+   .content-list  a {
+    text-decoration: none;
+    border-bottom: solid 2px #F8F8F8;
+    padding-left: 10px;
+    color: #2C3E50;
+  }
+
+
+  .content-list a:hover {
+    color: #F03938;
+  }
+
+  .sub-menu {
+    display: relative;
+  }
+
+  .sub-menu:hover .content-list {
+    display: block;
+  }
+
+  .sub-menu:hover .content-list {
+    display: block;
+  }
+
+  .sub-menu:hover .content-list a{
+    display: block;
+    text-align: left;
+    
   }
   
   @media screen and (max-width: 500px) {
