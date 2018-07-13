@@ -37,6 +37,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  background: #F8F8F8;
+  background: linear-gradient(230deg, #ffffff, #f0ebeb);
  }
 </style>

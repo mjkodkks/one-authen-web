@@ -85,6 +85,7 @@ export default {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 600px;
   box-sizing: border-box;

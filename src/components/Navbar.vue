@@ -10,7 +10,7 @@
           </a>
           <a href="#" v-scroll-to="'#section-2'" class="sub-menu">
             <li>โซลูชั่น</li>
-            <div class="animated fadeIn content-list">
+            <div class="animated bounceIn content-list">
                 <a href="">certification</a>
                 <a href="">digital signing</a>
               </div>            
@@ -20,13 +20,13 @@
           </a>
         </ul>
         <ul v-else-if="clicked === true" class="super-menu-mobile" v-scroll="handleScrollsupermenu">
-          <a class="animated fadeIn" href="#" v-scroll-to="'#section-1'">
+          <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-1'">
             <li>หน้าหลัก</li>
           </a>
-          <a class="animated fadeIn" href="#" v-scroll-to="'#section-2'">
+          <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-2'">
             <li>โซลูชั่น</li>
           </a>
-          <a class="animated fadeIn" href="#" v-scroll-to="'#section-3'">
+          <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-3'">
             <li>ติดต่อเรา</li>
           </a>
         </ul>
@@ -150,6 +150,7 @@
     padding: 10px;
     filter: brightness(0) invert(1);
     margin-left: 5%;
+    margin-top: 1%;
     cursor: pointer;
     transition: all 1s;
   }
@@ -165,7 +166,7 @@
   .logo-scroll {
     width: 110px;
     padding: 10px;
-    margin-left: 5%;
+    margin-left: 10%;
     cursor: pointer;
     transition: all 1s;
   }
@@ -191,7 +192,7 @@
     text-align: center;
     line-height: 45px;
     color: #ee2524;
-    padding-bottom: 5px;
+    
     transition: all 0.5s;
     border-bottom: solid 5px #ee2524;
     border-left: solid 2px #ee2524;
@@ -221,6 +222,7 @@
     line-height: 45px;
     color: #ee2524;
     padding: 5px;
+    padding-bottom: 10px;
     transition: all 0.5s;
     border-bottom: solid 5px #ee2524;
     border-left: solid 2px #ee2524;
@@ -236,10 +238,10 @@
   .content-list {
     display: none;
     position: absolute;
-    top: 62px;
+    top: 67px;
     right: 167px;
-    min-width: 148px;
-    height: calc(100%-100px);
+    min-width: 200px;
+    height: auto;
     border: solid 2px #fefefe;
     background: #ffff;
     transition: all 0.5s;
@@ -248,9 +250,10 @@
     line-height: 45px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     border-radius: 2px;
+    text-transform: uppercase;
   }
 
-.content-list::before {
+.content-list::after {
     content: '';
     display: block;
     position: absolute;
@@ -260,7 +263,6 @@
     right: 7px;
     transform: rotate(45deg);
     background: #fff;
-    
   }
 
    .content-list  a {

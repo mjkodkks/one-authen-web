@@ -2,7 +2,7 @@
   <div class="section">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="card-login"><img src="../../assets/logo_OneAuthen_500px.png" class="img-card" alt="fail">
+        <div class="wow slideInUp card-login"><img src="../../assets/logo_OneAuthen_500px.png" class="img-card" alt="fail">
         <div class="card-text" >ทดลองใช้งาน</div>
         </div>
       </div>

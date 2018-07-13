@@ -3,11 +3,11 @@
     <div class="logo">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="title-head">
+          <div class="wow slideInUp title-head">
             Digital Signing</div>
         </div>
         <div class="row justify-content-center">
-          <div class="title-head-second">แพลตฟอร์มลงลายมือชื่ออิเล็กทรอนิกส์ที่น่าเชื่อถือ</div>
+          <div class="wow slideInUp title-head-second">แพลตฟอร์มลงลายมือชื่ออิเล็กทรอนิกส์ที่น่าเชื่อถือ</div>
         </div>
       </div>
       <vue-particles class="particle-top" color="#BB1F20"></vue-particles>
@@ -43,8 +43,9 @@ export default {
   background: url("../assets/Image_42e317c.jpg");
   background-attachment: fixed;
   background-position: center top;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 
 .title-head {
