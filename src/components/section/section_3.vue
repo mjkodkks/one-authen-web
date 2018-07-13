@@ -58,7 +58,8 @@ export default {
     onSubmit(evt) {
       evt.preventDefault();
       var myform =
-        "คุณ " + this.name_user + "เบอร์ติดต่อ " + this.telephone_user;
+        "คุณ " + this.form.name_user + " เบอร์ติดต่อ " + this.form.telephone_user;
+        console.log(this.form.name_user)
       //alert(JSON.stringify(this.form));
       var mail = document.createElement("a");
       mail.href =
