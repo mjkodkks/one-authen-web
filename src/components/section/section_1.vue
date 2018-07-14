@@ -55,6 +55,7 @@ filter: brightness(0) invert(1);
 .card-login:hover{
 background: #EE2524;
 transition: all 0.5s;
+transform: scale(1.04, 1.04);
 -webkit-transform: scale(1.04, 1.04);
 }
 

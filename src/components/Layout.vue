@@ -3,11 +3,11 @@
     <div class="logo">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="wow slideInUp title-head">
+          <div class="title-head">
             Digital Signing</div>
         </div>
         <div class="row justify-content-center">
-          <div class="wow slideInUp title-head-second">แพลตฟอร์มลงลายมือชื่ออิเล็กทรอนิกส์ที่น่าเชื่อถือ</div>
+          <div class="title-head-second">แพลตฟอร์มลงลายมือชื่ออิเล็กทรอนิกส์ที่น่าเชื่อถือ</div>
         </div>
       </div>
       <vue-particles class="particle-top" color="#BB1F20"></vue-particles>

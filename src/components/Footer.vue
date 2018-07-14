@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="wow slideInUp row">
+          <div class="row">
             <div class="col-3 col-md-2 text-right">
               Address :
             </div>
@@ -11,7 +11,7 @@
               บริษัท วัน ออเทน จำกัด ทะเบียนนิติบุคคลเลขที่ : 0105561069151 ที่อยู่ : 1768 อาคารไทยซัมมิท ทาวเวอร์ ชั้น 16 ถ.เพชรบุรีตัดใหม่ แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310
             </div>
           </div>
-          <div class="wow slideInUp row">
+          <div class="row">
             <div class="col-3 col-md-2 text-right">
               Tel :
             </div>
@@ -19,7 +19,7 @@
               02-257-7269
             </div>
           </div>
-          <div class=" wow slideInUp row">
+          <div class="row">
             <div class="col-3 col-md-2 text-right">
               E-mail :
             </div>

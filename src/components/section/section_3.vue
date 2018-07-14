@@ -129,6 +129,7 @@ export default {
   left: 50%;
   opacity: 0;
   font-weight: 900;
+  transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
 }
 
@@ -141,6 +142,9 @@ export default {
   border-top: 0px #fff solid;
   border-right: 0px #fff solid;
   border-bottom: 0px #fff solid;
+  transform: scale(1.04, 1.04);
+  transition: border 0.3s ease-out;
+  transition: transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transform: scale(1.04, 1.04);
   -webkit-transition: border 0.3s ease-out;
   -webkit-transition: transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
