@@ -14,8 +14,7 @@
 <script>
 export default {
   name: "section_1",
-  components: {
-  }
+  components: {}
 };
 </script>
 
@@ -42,21 +41,21 @@ export default {
   transition: all 0.5s;
   cursor: pointer;
 }
-.card-login:hover .img-card{
-filter: brightness(0) invert(1);
+.card-login:hover .img-card {
+  filter: brightness(0) invert(1);
 }
 
-.card-login:hover .card-text{
-  color:#fff;
+.card-login:hover .card-text {
+  color: #fff;
   font-size: 3em;
   transition: all 0.8s;
 }
 
-.card-login:hover{
-background: #EE2524;
-transition: all 0.5s;
-transform: scale(1.04, 1.04);
--webkit-transform: scale(1.04, 1.04);
+.card-login:hover {
+  background: #ee2524;
+  transition: all 0.5s;
+  transform: scale(1.04, 1.04);
+  -webkit-transform: scale(1.04, 1.04);
 }
 
 .img-card {
@@ -79,8 +78,21 @@ transform: scale(1.04, 1.04);
     height: 100%;
     margin: 39px 0 0 0;
   }
+
+  .card-login:hover .card-text {
+    color: #fff;
+    font-size: 2em;
+    transition: all 0.8s;
+  }
+
+  .card-login:hover {
+    background: #ee2524;
+    transition: all 0.5s;
+    transform: scale(1.04, 1.04);
+    -webkit-transform: scale(1.04, 1.04);
+  }
   .section[data-v-63900940] {
     height: 200px;
-}
+  }
 }
 </style>
