@@ -24,7 +24,11 @@
             <li>หน้าหลัก</li>
           </a>
           <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-2'">
-            <li>โซลูชั่น </li>
+            <li @click="collapseSubmenu">โซลูชั่น </li>
+            <div v-show="clicked_submenu" class="animated fadeIn content-list-mobile">
+                <a href="">certification</a>
+                <a href="">digital signing</a>
+              </div>  
           </a>
           <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-3'">
             <li>ติดต่อเรา</li>
@@ -76,7 +80,8 @@ export default {
         width: 0,
         height: 0
       },
-      clicked: false
+      clicked: false,
+      clicked_submenu: false
     };
   },
   methods: {
@@ -120,6 +125,9 @@ export default {
     },
     collapseBurger() {
       this.clicked = !this.clicked;
+    },
+    collapseSubmenu() {
+      this.clicked_submenu = !this.clicked_submenu;
     }
   }
 };
@@ -318,11 +326,11 @@ ul {
 
 .img-sub-menu-scroll {
   transform: rotate(90deg);
-  filter:grayscale(1);
+  filter: grayscale(1);
   transition: all 0.8s;
 }
 
-.sub-menu:hover img{
+.sub-menu:hover img {
   filter: none;
 }
 
@@ -423,6 +431,7 @@ ul {
   .logo {
     filter: brightness(1) invert(0);
   }
+
   .burger-position-mobile {
     top: 5px;
     display: block;
@@ -433,5 +442,25 @@ ul {
   ul {
     border-bottom: #fefefe solid;
   }
+  .content-list-mobile {
+    display: block;
+    width: 100%;
+    background: #f03938;
+
+  }
+  .content-list-mobile a{
+    display: block;
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none !important;
+  }
+
 }
 </style>
+<style>
+ a {
+   text-decoration: none !important;
+ }
+</style>
+

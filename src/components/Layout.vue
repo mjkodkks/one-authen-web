@@ -97,6 +97,7 @@ export default {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .particle-top {
