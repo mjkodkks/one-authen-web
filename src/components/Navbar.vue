@@ -9,7 +9,7 @@
             <li>หน้าหลัก</li>
           </a>
           <a href="#" v-scroll-to="'#section-2'" class="sub-menu">
-            <li>โซลูชั่น</li>
+            <li>โซลูชั่น <img v-scroll="handleScrolltri" src="../assets/ICON/bx-play.svg" class="img-sub-menu"> </li>
             <div class="animated bounceIn content-list">
                 <a href="">certification</a>
                 <a href="">digital signing</a>
@@ -24,7 +24,7 @@
             <li>หน้าหลัก</li>
           </a>
           <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-2'">
-            <li>โซลูชั่น</li>
+            <li>โซลูชั่น </li>
           </a>
           <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-3'">
             <li>ติดต่อเรา</li>
@@ -104,6 +104,11 @@ export default {
       if (window.scrollY > 50) {
         el.setAttribute("class", "burger-position-mobile");
       } else el.setAttribute("class", "burger-position");
+    },
+    handleScrolltri: function(evt, el) {
+      if (window.scrollY > 50) {
+        el.setAttribute("class", "img-sub-menu-scroll");
+      } else el.setAttribute("class", "img-sub-menu");
     },
     handleResize() {
       this.window.width = window.innerWidth;
@@ -303,6 +308,22 @@ ul {
 .sub-menu:hover .content-list a {
   display: block;
   text-align: left;
+}
+
+.img-sub-menu {
+  transform: rotate(90deg);
+  filter: brightness(0) invert(1);
+  transition: all 0.8s;
+}
+
+.img-sub-menu-scroll {
+  transform: rotate(90deg);
+  filter:grayscale(1);
+  transition: all 0.8s;
+}
+
+.sub-menu:hover img{
+  filter: none;
 }
 
 @media screen and (max-width: 500px) {
